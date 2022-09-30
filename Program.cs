@@ -23,3 +23,20 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();    
 }
+
+string[] NewArray(string[] array)
+{
+    int size = 0;
+    for (int i = 0; i < array.Length; i++)
+        if (array[i].Length <= 3) size++;
+    
+    string[] newarray = new string[size];
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
+        if (array[i].Length <= 3)
+        {
+            newarray[j] = array[i];
+            j++;
+        }
+    return newarray;
+}
