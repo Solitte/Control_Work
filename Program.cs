@@ -40,3 +40,8 @@ string[] NewArray(string[] array)
         }
     return newarray;
 }
+
+string[] oldarray = InputArray();
+PrintArray(oldarray);
+string[] newarray = NewArray(oldarray);
+PrintArray(newarray);
